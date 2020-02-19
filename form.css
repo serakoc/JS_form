@@ -10,6 +10,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+#cobaye
+{
+  height:45px;
+}
 #progression
 {
   background-color : white;
@@ -20,6 +24,7 @@
   background-color : green;
   width:0px;
   height : 10px;
+  transition: 0.5s;
 }
 
 #titre

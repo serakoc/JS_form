@@ -1,36 +1,38 @@
+<div id="insert">
+    <p id="titre"></p>
+    <input type="text" name="cobaye" id="cobaye">
 
-    <div id="insert">
-        <p id="titre"></p>
-        <input type="text" name="cobaye" id="cobaye">
-        <div id="div_sexe" style="display:none;">
-            h:<input type="checkbox" id="h">
-            f:<input type="checkbox" id="f">
-        </div>
-        <div id="date_input" style="display:none;">
-            <input type="date" name="date" id="date">
-        </div>
-        <input type="button" name="valeur" value="suivant" id="valeur">
-        <div id="progression">
-            <span id="progression-bar"></span>
-        </div>
+    <div id="div_sexe" style="display:none;">
+        h:<input type="checkbox" id="h">
+        f:<input type="checkbox" id="f">
     </div>
-    
-
-    <form method="POST" action="http://bienvu.net/script.php" hidden>
-        <input type="text" name="nom" id="nom">
-        <input type="text" name="prenom" id="prenom">
-        <input type="text" name="sexe" id="sexe">
+    <div id="date_input" style="display:none;">
         <input type="date" name="date" id="date">
-        <input type="text" name="adresse" id="adresse">
-        <input type="text" name="postal" id="postal">
-        <input type="text" name="ville" id="ville">
-        <input type="text" name="email" id="email">
-        <input type="text" name="sujet" id="sujet">
-        <textarea name="demande" id="demande"></textarea>
-        <input type="checkbox" name="confirmation" id="confirmation">
-    </form>
+    </div>
+    <input type="button" name="valeur" value="suivant" id="valeur">
+    <input type="button" name="retour" value="retour" id="retour">
+    <div id="progression">
+        <span id="progression-bar"></span>
+    </div>
+</div>
+<div id="topo">
 
-<script src="https://code.jquery.com/jquery-3.4.1.js"
-integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-crossorigin="anonymous"></script>
-<script src="../public/assets/js/form_interactive.js"></script>
+</div>
+
+
+<form method="POST" action="http://bienvu.net/script.php" hidden>
+    <input type="text" name="nom" id="nom">
+    <input type="text" name="prenom" id="prenom">
+    <input type="text" name="sexe" id="sexe">
+    <input type="text" name="adresse" id="adresse">
+    <input type="text" name="postal" id="postal">
+    <input type="text" name="ville" id="ville">
+    <input type="text" name="email" id="email">
+    <input type="text" name="sujet" id="sujet">
+    <input type="text" name="demande" id="demande">
+    <input type="checkbox" name="confirmation" id="confirmation" required>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="../public/assets/js/form_interactive1.js"></script>

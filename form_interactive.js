@@ -53,7 +53,7 @@ $("#retour").click(function () {
         console.log(compteur);
         //compteur décrementer pour pouvoir "attraper" l'étape
         compteur--;
-
+        $("#danger").remove();
         //soustraction de nbr_etape pour pouvoir actualiser la barre de progression
         nbr_etape -= etape_plus;
         $("#progression-bar").width(nbr_etape + "%");

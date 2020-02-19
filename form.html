@@ -1,24 +1,30 @@
-<div id="insert">
-    <p id="titre"></p>
-    <input type="text" name="cobaye" id="cobaye">
+<div id="flex">
+    <div id="insert">
+        <p id="titre"></p>
 
-    <div id="div_sexe" style="display:none;">
-        h:<input type="checkbox" id="h">
-        f:<input type="checkbox" id="f">
+        <label for="cobaye"></label>
+        <input type="text" name="cobaye" id="cobaye">
+
+        <div id="div_sexe" style="display:none;">
+            <label for="h">homme :</label>
+            <input type="checkbox" id="h">
+
+            <label for="f">femme :</label>
+            <input type="checkbox" id="f">
+        </div>
+        <div id="date_input" style="display:none;">
+            <label for="date"></label>
+            <input type="date" name="date" id="date">
+        </div>
+        <input type="button" name="valeur" value="suivant" id="valeur">
+        <input type="button" name="retour" value="retour" id="retour">
+        <div id="progression">
+            <span id="progression-bar"></span>
+        </div>
     </div>
-    <div id="date_input" style="display:none;">
-        <input type="date" name="date" id="date">
-    </div>
-    <input type="button" name="valeur" value="suivant" id="valeur">
-    <input type="button" name="retour" value="retour" id="retour">
-    <div id="progression">
-        <span id="progression-bar"></span>
-    </div>
+
+    <div id="topo"></div>
 </div>
-<div id="topo">
-
-</div>
-
 
 <form method="POST" action="http://bienvu.net/script.php" hidden>
     <input type="text" name="nom" id="nom">
